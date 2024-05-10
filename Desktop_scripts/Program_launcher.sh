@@ -21,11 +21,14 @@ Programs=(
 	"󰻬  OpenSCAD             3D CAD modeling"
 	"  Sweet Home 3D        3D house interior plan designer"
 	" "
+	"  BTOP                 Terminal-based system monitor"
+	"  CPU-X                Detailed processor information"
+	"  Misson Center        GUI-based system monitor"
+	" "
 	"󱌐  Bottles              Run Windows programs in Bottles"
 	" "
 	"  Calcurse             Calendar"
 	"  Clock                GNOME's clock"
-	"  CPU-X                Detailed processor information"
 	"  CUPS                 Printer configuration"
 	" "
 	"  DeSmuME              Nintendo DS/I emulator"
@@ -153,6 +156,15 @@ elif [ "$Program" = "󰻬  OpenSCAD             3D CAD modeling" ]; then
 elif [ "$Program" = "  Sweet Home 3D        3D house interior plan designer" ]; then
 	sweethome3d & disown
 
+elif [ "$Program" = "  BTOP                 Terminal-based system monitor" ]; then
+	alacritty -e btop & disown
+
+elif [ "$Program" = "  CPU-X                Detailed processor information" ]; then
+	alacritty --class CPU-X -e cpu-x & disown
+
+elif [ "$Program" = "  Misson Center        GUI-based system monitor" ]; then
+	missioncenter & disown
+
 elif [ "$Program" = "󱌐  Bottles              Run Windows programs in Bottles" ]; then
 	com.usebottles.bottles & disown
 
@@ -161,9 +173,6 @@ elif [ "$Program" = "  Calcurse             Calendar" ]; then
 
 elif [ "$Program" = "  Clock                GNOME's clock" ]; then
 	gnome-clocks & disown
-
-elif [ "$Program" = "  CPU-X                Detailed processor information" ]; then
-	alacritty --class CPU-X -e cpu-x & disown
 
 elif [ "$Program" = "  CUPS                 Printer configuration" ]; then
 	xdg-open "https://localhost:631/" & disown
