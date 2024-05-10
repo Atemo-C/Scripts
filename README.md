@@ -3,8 +3,8 @@ Various scripts for my own use, of questionable quality.
 
 ---
 
-## Tofi - All kinds of menu scripts
-These scripts are used on my Hyprland desktop. They require [Tofi](https://github.com/philj56/tofi), [GNU Bash](https://www.gnu.org/software/bash/), some sort of [Nerd Font](https://www.nerdfonts.com/), and whatever else is used in the scripts to be installed. They are meant for use in the Hyprland desktop on the NixOS distribution, and are meant for my personal use.
+## Desktop_scripts - All kinds of desktop and menu scripts
+These scripts are used on my Hyprland desktop. Most require [Tofi](https://github.com/philj56/tofi), [GNU Bash](https://www.gnu.org/software/bash/), some sort of [Nerd Font](https://www.nerdfonts.com/), and whatever else is used in the scripts to be installed. They are meant for use in the Hyprland desktop on the NixOS distribution, and are meant for my personal use.
 
 ---
 
