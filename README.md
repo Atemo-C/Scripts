@@ -18,6 +18,9 @@ Taking screenshots with [Hyprshot](https://github.com/Gustash/hyprshot).
 ### `Power_menu.sh`
 A power menu with many options, even including things like rebooting into the UEFI firmware *(useful)* or halting the system *(useless but nostalgic)*.
 
+### `Program_launcher.sh`
+A program launcher.
+
 ---
 
 ## Ubuntu - `Desnap.sh` and `Desnap.iso`
