@@ -3,6 +3,8 @@
 set -euo pipefail
 
 Programs=(
+	"                     󰌧  Run launcher                     "
+	" "
 	"  Alacritty            GPU-accelerated Terminal emulator"
 	"  LXTerminal           VTE-based Terminal emulator"
 	" "
@@ -113,6 +115,9 @@ Program=$(
 
 if [ "$Program" = " " ]; then
 	bash "$HOME/Programs/Scripts/Desktop_scripts/Program_launcher.sh"
+
+elif [ "$Program" = "                     󰌧  Run launcher                     " ]; then
+	tofi-drun --drun-launch=true & disown
 
 elif [ "$Program" = "  Alacritty            GPU-accelerated Terminal emulator" ]; then
 	alacritty & disown
