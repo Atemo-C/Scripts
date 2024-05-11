@@ -9,6 +9,9 @@ These scripts are used on my Hyprland desktop. Most require [Tofi](https://githu
 ### `Emoji.sh`
 A one-liner that should probably not be a script. Opens the [emoji picker](https://github.com/bcongdon/ep) program to select an emoji, waits for `0.1s` for the emoji to properly get copied to the clipboard, then closes the window.
 
+### `Flatpak_install.sh`
+This adds the Flathub repository for the system and the user and installs the Flatpak packages that I use for the user.
+
 ### `Hyprpaper.sh`
 Selecting a static wallpaper. Uses [Zenity](https://gitlab.gnome.org/GNOME/zenity) for the file picker.
 
