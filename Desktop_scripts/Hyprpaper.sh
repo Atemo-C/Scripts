@@ -5,8 +5,10 @@ set -euo pipefail
 Wallpaper=$(zenity \
 	--file-selection \
 	--filename="$HOME/Images/Backgrounds/Static_backgrounds/" \
-	--file-filter="*.png *.jpg *.jpg *.jpeg *.webp *.jxl" \
+	--file-filter="*.png *.jpg *.jpg *.jpeg *.webp" \
 	--title="Select an image")
+# Removed the "*.jxl" extension support, for now.
+# See https://github.com/hyprwm/hyprpaper/issues/85
 
 case $? in
 	0) echo -e \
