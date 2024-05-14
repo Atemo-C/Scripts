@@ -1,4 +1,5 @@
-#!/usr/bin/env/sh
+#!/usr/bin/env sh
+
 
 # Clear the terminal
 clear
@@ -30,7 +31,7 @@ sudo snap remove snapd
 sudo apt autopurge snapd -y
 
 # Removing the now unused `$HOME/snap/` directory
-rm -rf $HOME/snap/
+rm -rf "$HOME/snap/"
 
 # Installing Flatpak
 sudo apt install flatpak -y
@@ -50,7 +51,6 @@ sudo apt install --no-install-recommends -y \
 sudo apt install gnome-firmware -y
 
 # Installing a web browser to replace the Firefox snap
-# By default, I choose Librewolf, but feel free to install whichever web browser you want
 flatpak install --user flathub io.gitlab.librewolf-community -y
 
 # Installing some GNOME utilities
