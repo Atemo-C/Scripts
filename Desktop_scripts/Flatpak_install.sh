@@ -12,6 +12,7 @@ flatpak install flathub --user \
 	dev.vencord.Vesktop \
 	net.pcsx2.PCSX2 \
 	net.rpcs3.RPCS3 \
+ 	org.keepassxc.KeePassXC \
 	org.vinegarhq.Vinegar \
 	page.codeberg.JakobDev.jdNBTExplorer \
 	re.sonny.Workbench \
