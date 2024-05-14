@@ -77,6 +77,8 @@ Programs=(
 	"  Keymapp              Layout tool for ZSA keyboards"
 	"󰍽  Xclicker             X11 autocliker (for XWayland)"
 	" "
+	"  KeePassXC            Password manager"
+	" "
 	"  Kdenlive             Video editor"
 	"󰑋  OBS studio           Recording and streaming"
 	" "
@@ -296,6 +298,9 @@ elif [ "$Program" = "  Keymapp              Layout tool for ZSA keyboards" ];
 
 elif [ "$Program" = "󰍽  Xclicker             X11 autocliker (for XWayland)" ]; then
 	xclicker & disown
+
+elif [ "$Program" = "  KeePassXC            Password manager" ]; then
+	org.keepassxc.KeePassXC & disown
 
 elif [ "$Program" = "  Kdenlive             Video editor" ]; then
 	kdenlive & disown
