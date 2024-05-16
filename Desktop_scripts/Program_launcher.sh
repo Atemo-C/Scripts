@@ -215,15 +215,7 @@ elif [ "$Program" = "  PCSX2                PlayStation 2/1 emulator" ]; then
 	net.pcsx2.PCSX2 & disown
 
 elif [ "$Program" = "  Steam                Needs a description ?" ]; then
-	Xwayland -fullscreen -geometry 1920x1080 -decorate :12 &
-	sleep 0.5 &&
-	DISPLAY=:12 SESSION_MANAGER= GDK_BACKEND=x11 lxterminal -e xrandr --newmode "1920x1080_120.00"  369.50  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
-	DISPLAY=:12 SESSION_MANAGER= GDK_BACKEND=x11 lxterminal -e xrandr --newmode "1920x1080_120.00"  369.50  1920 2080 2288 2656  1080 1083 1088 1160 -hsync +vsync
-	DISPLAY=:12 SESSION_MANAGER= GDK_BACKEND=x11 lxterminal -e xrandr --addmode XWAYLAND0 "1920x1080_120.00"
-	DISPLAY=:12 SESSION_MANAGER= GDK_BACKEND=x11 lxterminal -e xrandr --output XWAYLAND0 --mode "1920x1080_120.00"
-	DISPLAY=:12 SESSION_MANAGER= GDK_BACKEND=x11 openbox &
-	sleep 1 &&
-	DISPLAY=:12 SESSION_MANAGER= GDK_BACKEND=x11 steam ; killall Xwayland
+	steam & disown
 
 elif [ "$Program" = "󰵹  SuperTuxKart         FOSS Mario-Kart like game" ]; then
 	supertuxkart & disown
