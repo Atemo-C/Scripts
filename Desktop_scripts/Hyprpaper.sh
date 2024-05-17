@@ -4,7 +4,7 @@ set -euo pipefail
 
 Wallpaper=$(zenity \
 	--file-selection \
-	--filename="$HOME/Images/Backgrounds/Static_backgrounds/" \
+	--filename="$HOME/Images/Backgrounds/ /" \
 	--file-filter="*.png *.jpg *.jpg *.jpeg *.webp" \
 	--title="Select an image")
 # Removed the "*.jxl" extension support, for now.
