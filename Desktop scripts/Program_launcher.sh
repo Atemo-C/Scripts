@@ -119,7 +119,7 @@ Program=$(
 )
 
 if [ "$Program" = " " ]; then
-	bash "$HOME/Programs/Scripts/Desktop_scripts/Program_launcher.sh"
+	bash "$HOME/Programs/Scripts/Desktop scripts/Program_launcher.sh"
 
 elif [ "$Program" = "                     󰌧  Run launcher                     " ]; then
 	tofi-drun --drun-launch=true & disown
@@ -274,7 +274,7 @@ elif [ "$Program" = "  GIMP                 GNU Image Manipulation Program" ]
 	gimp & disown
 
 elif [ "$Program" = "  Hyprpaper            Set desktop background/wallpaper" ]; then
-	bash "$HOME/Programs/Scripts/Desktop_scripts/Hyprpaper.sh" & disown
+	bash "$HOME/Programs/Scripts/Desktop scripts/Hyprpaper.sh" & disown
 
 elif [ "$Program" = "  Inkscape             Vector image manipulation" ]; then
 	inkscape & disown
