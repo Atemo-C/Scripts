@@ -216,7 +216,7 @@ elif [ "$Program" = "  PCSX2                PlayStation 2/1 emulator" ]; then
 	net.pcsx2.PCSX2 & disown
 
 elif [ "$Program" = "  Steam                Needs a description ?" ]; then
-	steam
+	steam & disown
 
 elif [ "$Program" = "󰵹  SuperTuxKart         FOSS Mario-Kart like game" ]; then
 	supertuxkart & disown
