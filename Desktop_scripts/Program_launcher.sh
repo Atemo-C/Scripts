@@ -45,6 +45,7 @@ Programs=(
 	"  PCSX2                PlayStation 2/1 emulator"
 	"  Steam                Needs a description ?"
 	"󰵹  SuperTuxKart         FOSS Mario-Kart like game"
+	"  D.D.D                That's not my neighbor"
 	" "
 	"󰙯  Discord              Need spyware, apparently"
 	"󰙯  Vesktop              Discord, but Vencorded"
@@ -215,10 +216,13 @@ elif [ "$Program" = "  PCSX2                PlayStation 2/1 emulator" ]; then
 	net.pcsx2.PCSX2 & disown
 
 elif [ "$Program" = "  Steam                Needs a description ?" ]; then
-	steam & disown
+	steam
 
 elif [ "$Program" = "󰵹  SuperTuxKart         FOSS Mario-Kart like game" ]; then
 	supertuxkart & disown
+
+elif [ "$Program" = "  D.D.D                That's not my neighbor" ]; then
+	steam-run "$HOME/Programs/Games/That's not my neighbor/That's not my neighbor.x86_64"
 
 elif [ "$Program" = "󰙯  Discord              Need spyware, apparently" ]; then
 	xdg-open "https://discord.com/channels/@me" & disown
