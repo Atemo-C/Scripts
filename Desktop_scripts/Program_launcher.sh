@@ -78,6 +78,8 @@ Programs=(
 	"  Keymapp              Layout tool for ZSA keyboards"
 	"󰍽  Xclicker             X11 autocliker (for XWayland)"
 	" "
+	"  Kurso de Esperanto   Esperanto learning program"
+	" "
 	"  KeePassXC            Password manager"
 	" "
 	"  Kdenlive             Video editor"
@@ -222,7 +224,7 @@ elif [ "$Program" = "󰵹  SuperTuxKart         FOSS Mario-Kart like game" ]; th
 	supertuxkart & disown
 
 elif [ "$Program" = "  D.D.D                That's not my neighbor" ]; then
-	steam-run "$HOME/Programs/Games/That's not my neighbor/That's not my neighbor.x86_64"
+	steam-run "$HOME/Programs/Games/That's not my neighbor/That's not my neighbor.x86_64" & disown
 
 elif [ "$Program" = "󰙯  Discord              Need spyware, apparently" ]; then
 	xdg-open "https://discord.com/channels/@me" & disown
@@ -297,6 +299,9 @@ elif [ "$Program" = "  Keymapp              Layout tool for ZSA keyboards" ];
 
 elif [ "$Program" = "󰍽  Xclicker             X11 autocliker (for XWayland)" ]; then
 	xclicker & disown
+
+elif [ "$Program" = "  Kurso de Esperanto   Esperanto learning program" ]; then
+	steam-run "$HOME/Programs/Kurso de Esperanto/kursokape" & disown
 
 elif [ "$Program" = "  KeePassXC            Password manager" ]; then
 	org.keepassxc.KeePassXC & disown
