@@ -21,7 +21,6 @@ Programs=(
 	"󰂫  Blender              3D modeling"
 	"  Cura                 3D printing"
 	"󰻬  OpenSCAD             3D CAD modeling"
-	"  Sweet Home 3D        3D house interior plan designer"
 	" "
 	"  BTOP                 Terminal-based system monitor"
 	"  CPU-X                Detailed processor information"
@@ -162,9 +161,6 @@ elif [ "$Program" = "  Cura                 3D printing" ]; then
 
 elif [ "$Program" = "󰻬  OpenSCAD             3D CAD modeling" ]; then
 	openscad & disown
-
-elif [ "$Program" = "  Sweet Home 3D        3D house interior plan designer" ]; then
-	sweethome3d & disown
 
 elif [ "$Program" = "  BTOP                 Terminal-based system monitor" ]; then
 	alacritty -e btop & disown
