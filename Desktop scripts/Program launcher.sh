@@ -117,7 +117,7 @@ Program=$(
 )
 
 if [ "$Program" = " " ]; then
-	bash "$HOME/Programs/Scripts/Desktop scripts/Program_launcher.sh"
+	bash "$HOME/Programs/Scripts/Desktop scripts/Program launcher.sh"
 
 elif [ "$Program" = "                     󰌧  Run launcher                     " ]; then
 	tofi-drun --drun-launch=true & disown
