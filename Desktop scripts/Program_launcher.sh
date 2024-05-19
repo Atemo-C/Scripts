@@ -73,7 +73,6 @@ Programs=(
 	"  Pixelorama           Pixelart tool"
 	"  Upscayl              Upscale images"
 	" "
-	"  Key mapper           Remap keys"
 	"  Keymapp              Layout tool for ZSA keyboards"
 	"󰍽  Xclicker             X11 autocliker (for XWayland)"
 	" "
@@ -286,9 +285,6 @@ elif [ "$Program" = "  Pixelorama           Pixelart tool" ]; then
 
 elif [ "$Program" = "  Upscayl              Upscale images" ]; then
 	upscayl & disown
-
-elif [ "$Program" = "  Key mapper           Remap keys" ]; then
-	input-remapper-gtk & disown
 
 elif [ "$Program" = "  Keymapp              Layout tool for ZSA keyboards" ]; then
 	keymapp & disown
