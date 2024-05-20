@@ -5,9 +5,6 @@ set -euo pipefail
 Programs=(
 	"                     󰌧  Run launcher                     "
 	" "
-	"  Alacritty            GPU-accelerated Terminal emulator"
-	"  LXTerminal           VTE-based Terminal emulator"
-	" "
 	"  Amfora               CLI Gemini client"
 	"  Lagrange             GUI Gemini client"
 	" "
@@ -98,6 +95,8 @@ Programs=(
 	" "
 	"󰓅  Speedtest            Test internet speed"
 	" "
+	"  ST                   Suckless terminal emulator"
+	" "
 	"  Thunderbird          E-mail client"
 	" "
 #    "󰪫  Virtualbox           Virtual machines, the classic way"
@@ -122,14 +121,8 @@ if [ "$Program" = " " ]; then
 elif [ "$Program" = "                     󰌧  Run launcher                     " ]; then
 	tofi-drun --drun-launch=true & disown
 
-elif [ "$Program" = "  Alacritty            GPU-accelerated Terminal emulator" ]; then
-	alacritty & disown
-
-elif [ "$Program" = "  LXTerminal           VTE-based Terminal emulator" ]; then
-	lxterminal & disown
-
 elif [ "$Program" = "  Amfora               CLI Gemini client" ]; then
-	alacritty -e amfora & disown
+	st -e amfora & disown
 
 elif [ "$Program" = "  Lagrange             GUI Gemini client" ]; then
 	lagrange & disown
@@ -162,10 +155,10 @@ elif [ "$Program" = "󰻬  OpenSCAD             3D CAD modeling" ]; then
 	openscad & disown
 
 elif [ "$Program" = "  BTOP                 Terminal-based system monitor" ]; then
-	alacritty -e btop & disown
+	st -e btop & disown
 
 elif [ "$Program" = "  CPU-X                Detailed processor information" ]; then
-	alacritty --class CPU-X -e cpu-x & disown
+	st --class CPU-X -e cpu-x & disown
 
 elif [ "$Program" = "  Misson Center        GUI-based system monitor" ]; then
 	missioncenter & disown
@@ -174,7 +167,7 @@ elif [ "$Program" = "󱌐  Bottles              Run Windows programs in Bottles"
 	com.usebottles.bottles & disown
 
 elif [ "$Program" = "  Calcurse             Calendar" ]; then
-	alacritty -e calcurse & disown
+	st -e calcurse & disown
 
 elif [ "$Program" = "  Clock                GNOME's clock" ]; then
 	gnome-clocks & disown
@@ -204,7 +197,7 @@ elif [ "$Program" = "  RetroPlus            ROM downloader" ]; then
 #	org.vinegarhq.Vinegar player run & disown
 
 #elif [ "$Program" = "  Vinegar              Configure how Roblox works" ]; then
-#	alacritty -e org.vinegarhq.Vinegar edit & disown
+#	st -e org.vinegarhq.Vinegar edit & disown
 
 elif [ "$Program" = "  RPCS3                PlayStation 3 emulator" ]; then
 	net.rpcs3.RPCS3 & disown
@@ -240,10 +233,10 @@ elif [ "$Program" = "󰋊  Gparted              Partition manager" ]; then
 	pkexec gparted & disown
 
 elif [ "$Program" = "󰋊  ncdu                 Disk usage" ]; then
-	alacritty -e ncdu & disown
+	st -e ncdu & disown
 
 elif [ "$Program" = "  Ventoy               Bootable USB creation tool" ]; then
-	alacritty -e sudo ventoy-web & disown
+	st -e sudo ventoy-web & disown
 
 elif [ "$Program" = "  File roller          Archive manager" ]; then
 	file-roller & disown
@@ -320,7 +313,7 @@ elif [ "$Program" = "󰗹  Torbrowser launcher  Tor browser" ]; then
 	tor-browser & disown
 
 elif [ "$Program" = "󰛳  Network Manager      Manage WiFi and Ethernet" ]; then
-	alacritty -e nmtui & disown
+	st -e nmtui & disown
 
 elif [ "$Program" = "󰛳  NM-applet            NetworkManager applet" ]; then
 	nm-applet & disown
@@ -333,6 +326,9 @@ elif [ "$Program" = "  Xfburn               Disc burning" ]; then
 
 elif [ "$Program" = "󰓅  Speedtest            Test internet speed" ]; then
 	xyz.ketok.Speedtest & disown
+
+elif [ "$Program" = "  ST                   Suckless terminal emulator" ]; then
+	st & disown
 
 elif [ "$Program" = "  Thunderbird          E-mail client" ]; then
 	thunderbird & disown
