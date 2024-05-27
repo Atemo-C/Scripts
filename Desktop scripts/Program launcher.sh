@@ -158,7 +158,7 @@ elif [ "$Program" = "  BTOP                 Terminal-based system monitor" ];
 	st -e btop & disown
 
 elif [ "$Program" = "  CPU-X                Detailed processor information" ]; then
-	st -e cpu-x & disown
+	st -c CPU-X -g=81x28 -e cpu-x & disown
 
 elif [ "$Program" = "  Misson Center        GUI-based system monitor" ]; then
 	missioncenter & disown
