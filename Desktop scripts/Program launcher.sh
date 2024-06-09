@@ -193,11 +193,11 @@ elif [ "$Program" = "󰍳  NBT Explorer         NBT Explorer and editor" ]; then
 elif [ "$Program" = "  RetroPlus            ROM downloader" ]; then
 	com.vysp3r.RetroPlus & disown
 
-#elif [ "$Program" = "  Roblox               Launch the desktop Roblox app" ]; then
-#	org.vinegarhq.Vinegar player run & disown
+elif [ "$Program" = "  Roblox               Launch the desktop Roblox app" ]; then
+	org.vinegarhq.Vinegar player run & disown
 
-#elif [ "$Program" = "  Vinegar              Configure how Roblox works" ]; then
-#	st -e org.vinegarhq.Vinegar edit & disown
+elif [ "$Program" = "  Vinegar              Configure how Roblox works" ]; then
+	st -e org.vinegarhq.Vinegar edit & disown
 
 elif [ "$Program" = "  RPCS3                PlayStation 3 emulator" ]; then
 	net.rpcs3.RPCS3 & disown
@@ -218,7 +218,7 @@ elif [ "$Program" = "󰙯  Discord              Need spyware, apparently" ]; the
 	xdg-open "https://discord.com/channels/@me" & disown
 
 elif [ "$Program" = "󰙯  Vesktop              Discord, but Vencorded" ]; then
-	dev.vencord.Vesktop & disown
+	vesktop & disown
 
 elif [ "$Program" = "󰭻  Element              Actually, no need for spyware" ]; then
 	element-desktop & disown
@@ -289,7 +289,7 @@ elif [ "$Program" = "  Kurso de Esperanto   Esperanto learning program" ]; th
 	steam-run "$HOME/Programs/Kurso de Esperanto/kursokape" & disown
 
 elif [ "$Program" = "  KeePassXC            Password manager" ]; then
-	org.keepassxc.KeePassXC & disown
+	keepassxc & disown
 
 elif [ "$Program" = "  Kdenlive             Video editor" ]; then
 	kdenlive & disown
@@ -333,12 +333,8 @@ elif [ "$Program" = "  ST                   Suckless terminal emulator" ]; th
 elif [ "$Program" = "  Thunderbird          E-mail client" ]; then
 	thunderbird & disown
 
-#elif [ "$Program" = "󰪫  Virtualbox           Virtual machines, the classic way" ]; then
-#	Xwayland -fullscreen -geometry 1920x1080 -decorate :12 &
-#	sleep 0.5 &&
-#	DISPLAY=:12 openbox &
-#	sleep 0.5 &&
-#	DISPLAY=:12 VirtualBox ; killall Xwayland
+elif [ "$Program" = "󰪫  Virtualbox           Virtual machines, the classic way" ]; then
+	VirtualBox & disown
 
 elif [ "$Program" = "󰪫  Virt Manager         Virtual machines using QEMU/KVM" ]; then
 	virt-manager & disown
