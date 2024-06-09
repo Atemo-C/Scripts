@@ -224,7 +224,7 @@ elif [ "$Program" = "󰭻  Element              Actually, no need for spyware" ]
 	element-desktop --ozone-platform-hint=x11 & disown
 
 elif [ "$Program" = "  Freetube             Watch YouTube videos" ]; then
-	freetube --ozone-platform-hint=x11 & disown
+	freetube --ozone-platform=x11 & disown
 
 elif [ "$Program" = "󰋊  Gnome disk utility   GNOME's disk utility" ]; then
 	gnome-disks & disown
