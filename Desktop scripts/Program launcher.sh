@@ -218,10 +218,10 @@ elif [ "$Program" = "󰙯  Discord              Need spyware, apparently" ]; the
 	xdg-open "https://discord.com/channels/@me" & disown
 
 elif [ "$Program" = "󰙯  Vesktop              Discord, but Vencorded" ]; then
-	vesktop & disown
+	vesktop --ozone-platform-hint=x11 & disown
 
 elif [ "$Program" = "󰭻  Element              Actually, no need for spyware" ]; then
-	element-desktop & disown
+	element-desktop --ozone-platform-hint=x11 & disown
 
 elif [ "$Program" = "  Freetube             Watch YouTube videos" ]; then
 	freetube & disown
