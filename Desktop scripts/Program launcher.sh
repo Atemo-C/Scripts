@@ -46,6 +46,7 @@ Programs=(
 	"󰙯  Discord              Need spyware, apparently"
 	"󰙯  Vesktop              Discord, but Vencorded"
 	"󰭻  Element              Actually, no need for spyware"
+	"󰭻  Revolt               FOSS alternative to Discord"
 	" "
 	"  Freetube             Watch YouTube videos"
 	" "
@@ -222,6 +223,9 @@ elif [ "$Program" = "󰙯  Vesktop              Discord, but Vencorded" ]; then
 
 elif [ "$Program" = "󰭻  Element              Actually, no need for spyware" ]; then
 	element-desktop --ozone-platform-hint=x11 & disown
+
+elif [ "$Program" = "󰭻  Revolt               FOSS alternative to Discord" ]; then
+	revolt-desktop --ozone-platform=x11 & disown
 
 elif [ "$Program" = "  Freetube             Watch YouTube videos" ]; then
 	freetube --ozone-platform=x11 & disown
