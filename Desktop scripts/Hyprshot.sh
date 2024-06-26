@@ -16,8 +16,8 @@ Options=(
 
 Choice=$(
 	printf '%s\n' "${Options[@]}" | tofi \
-		--width 370 \
-		--height 295 \
+		--width 405 \
+		--height 270 \
 		--prompt-text " " \
 		"${@}"
 )
