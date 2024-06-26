@@ -25,8 +25,8 @@ Confirmations=(
 
 Choice=$(
 	printf '%s\n' "${Options[@]}" | tofi \
-		--width 230 \
-		--height 320 \
+		--width 240 \
+		--height 290 \
 		--prompt-text " " \
 		"${@}"
 )
@@ -40,8 +40,8 @@ elif [ "$Choice" = "󰍹  Turn off display/s" ]; then
 elif [ "$Choice" = "󰒲  Suspend" ]; then
 	Choice=$(
 		printf '%s\n' "${Confirmations[@]}" | tofi \
-			--width 150 \
-			--height 180 \
+			--width 145 \
+			--height 165 \
 			--prompt-text "Suspend?"
 	)
 	if [ "$Choice" = " " ]; then
@@ -57,8 +57,8 @@ elif [ "$Choice" = "󰒲  Suspend" ]; then
 elif [ "$Choice" = "󰒲  Hibernate" ]; then
 	Choice=$(
 		printf '%s\n' "${Confirmations[@]}" | tofi \
-			--width 165 \
-			--height 180 \
+			--width 170 \
+			--height 165 \
 			--prompt-text "Hibernate? "
 	)
 	if [ "$Choice" = " " ]; then
@@ -74,8 +74,8 @@ elif [ "$Choice" = "󰒲  Hibernate" ]; then
 elif [ "$Choice" = "󱌂  Hybrid sleep" ]; then
 	Choice=$(
 		printf '%s\n' "${Confirmations[@]}" | tofi \
-			--width 180 \
-			--height 180 \
+			--width 190 \
+			--height 165 \
 			--prompt-text "Hybrid sleep? "
 	)
 	if [ "$Choice" = " " ]; then
@@ -92,7 +92,7 @@ elif [ "$Choice" = "󰜉  Reboot" ]; then
 	Choice=$(
 		printf '%s\n' "${Confirmations[@]}" | tofi \
 			--width 145 \
-			--height 180 \
+			--height 165 \
 			--prompt-text "Reboot? "
 	)
 	if [ "$Choice" = " " ]; then
@@ -108,8 +108,8 @@ elif [ "$Choice" = "󰜉  Reboot" ]; then
 elif [ "$Choice" = "  Reboot to UEFI firmware" ]; then
 	Choice=$(
 		printf '%s\n' "${Confirmations[@]}" | tofi \
-			--width 270 \
-			--height 180 \
+			--width 280 \
+			--height 165 \
 			--prompt-text "Reboot to UEFI firmware? "
 	)
 	if [ "$Choice" = " " ]; then
@@ -125,8 +125,8 @@ elif [ "$Choice" = "  Reboot to UEFI firmware" ]; then
 elif [ "$Choice" = "  Power off" ]; then
 	Choice=$(
 		printf '%s\n' "${Confirmations[@]}" | tofi \
-			--width 165 \
-			--height 180 \
+			--width 170 \
+			--height 165 \
 			--prompt-text "Power off? "
 	)
 	if [ "$Choice" = " " ]; then
@@ -142,8 +142,8 @@ elif [ "$Choice" = "  Power off" ]; then
 elif [ "$Choice" = "󰺟  Halt" ]; then
 	Choice=$(
 		printf '%s\n' "${Confirmations[@]}" | tofi \
-			--width 205 \
-			--height 180 \
+			--width 215 \
+			--height 165 \
 			--prompt-text "Halt the system? " & \
 			notify-send "Manually turn off power once the system halts. This is archaic."
 	)
