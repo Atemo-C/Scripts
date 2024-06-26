@@ -7,7 +7,7 @@ flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/fl
 
 flatpak install flathub --user \
 	com.ultimaker.cura \
-	com.userbottles.bottles \
+	com.usebottles.bottles \
 	com.vysp3r.RetroPlus \
 	org.vinegarhq.Vinegar \
 	page.codeberg.JakobDev.jdNBTExplorer \
