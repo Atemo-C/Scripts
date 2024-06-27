@@ -43,7 +43,6 @@ Programs=(
 	"󰵹  SuperTuxKart         FOSS Mario-Kart like game"
 	"  D.D.D                That's not my neighbor"
 	" "
-	"󰙯  Discord              Need spyware, apparently"
 	"󰙯  Vesktop              Discord, but Vencorded"
 	"󰭻  Element              Actually, no need for spyware"
 	"󰭻  Revolt               FOSS alternative to Discord"
@@ -218,9 +217,6 @@ elif [ "$Program" = "󰵹  SuperTuxKart         FOSS Mario-Kart like game" ]; th
 elif [ "$Program" = "  D.D.D                That's not my neighbor" ]; then
 #	steam-run "$HOME/Programs/Games/That's not my neighbor/That's not my neighbor.x86_64" & disown
 	nvidia-offload steam-run "$HOME/Programs/Games/That's not my neighbor/That's not my neighbor.x86_64" & disown
-
-elif [ "$Program" = "󰙯  Discord              Need spyware, apparently" ]; then
-	xdg-open "https://discord.com/channels/@me" & disown
 
 elif [ "$Program" = "󰙯  Vesktop              Discord, but Vencorded" ]; then
 #	vesktop --ozone-platform=x11 & disown
