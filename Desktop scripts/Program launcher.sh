@@ -21,7 +21,7 @@ Programs=(
 	" "
 	"  BTOP                 Terminal-based system monitor"
 	"  CPU-X                Detailed processor information"
-	"  Misson Center        GUI-based system monitor"
+	"  Mission Center       GUI-based system monitor"
 	" "
 	"󱌐  Bottles              Run Windows programs in Bottles"
 	" "
@@ -132,7 +132,8 @@ elif [ "$Program" = "  Audacious            Music player" ]; then
 	audacious & disown
 
 elif [ "$Program" = "  Audacity             Audio editor" ]; then
-	GDK_BACKEND=x11 audacity & disown
+#	GDK_BACKEND=x11 audacity & disown
+	audacity & disown
 
 elif [ "$Program" = "  EasyEffects          Effects to inputs or outputs" ]; then
 	easyeffects & disown
@@ -161,7 +162,7 @@ elif [ "$Program" = "  BTOP                 Terminal-based system monitor" ];
 elif [ "$Program" = "  CPU-X                Detailed processor information" ]; then
 	st -c CPU-X -g=81x28 -e cpu-x & disown
 
-elif [ "$Program" = "  Misson Center        GUI-based system monitor" ]; then
+elif [ "$Program" = "  Mission Center       GUI-based system monitor" ]; then
 	missioncenter & disown
 
 elif [ "$Program" = "󱌐  Bottles              Run Windows programs in Bottles" ]; then
@@ -219,16 +220,20 @@ elif [ "$Program" = "󰙯  Discord              Need spyware, apparently" ]; the
 	xdg-open "https://discord.com/channels/@me" & disown
 
 elif [ "$Program" = "󰙯  Vesktop              Discord, but Vencorded" ]; then
-	vesktop --ozone-platform-hint=x11 & disown
+#	vesktop --ozone-platform=x11 & disown
+	vesktop & disown
 
 elif [ "$Program" = "󰭻  Element              Actually, no need for spyware" ]; then
-	element-desktop --ozone-platform-hint=x11 & disown
+#	element-desktop --ozone-platform=x11 & disown
+	element-desktop & disown
 
 elif [ "$Program" = "󰭻  Revolt               FOSS alternative to Discord" ]; then
-	revolt-desktop --ozone-platform=x11 & disown
+#	revolt-desktop --ozone-platform=x11 & disown
+	revolt-desktop & disown
 
 elif [ "$Program" = "  Freetube             Watch YouTube videos" ]; then
-	freetube --ozone-platform=x11 & disown
+#	freetube --ozone-platform=x11 & disown
+	freetube & disown
 
 elif [ "$Program" = "󰋊  Gnome disk utility   GNOME's disk utility" ]; then
 	gnome-disks & disown
