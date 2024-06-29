@@ -131,8 +131,8 @@ elif [ "$Program" = "  Audacious            Music player" ]; then
 	audacious & disown
 
 elif [ "$Program" = "  Audacity             Audio editor" ]; then
-#	GDK_BACKEND=x11 audacity & disown
-	audacity & disown
+	GDK_BACKEND=x11 audacity & disown
+#	audacity & disown
 
 elif [ "$Program" = "  EasyEffects          Effects to inputs or outputs" ]; then
 	easyeffects & disown
