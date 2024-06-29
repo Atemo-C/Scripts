@@ -224,8 +224,8 @@ elif [ "$Program" = "󰙯  Vesktop              Discord, but Vencorded" ]; then
 	vesktop & disown
 
 elif [ "$Program" = "󰭻  Element              Actually, no need for spyware" ]; then
-#	element-desktop --ozone-platform=x11 & disown
-	element-desktop & disown
+	element-desktop --ozone-platform=x11 & disown
+#	element-desktop & disown
 
 elif [ "$Program" = "󰭻  Revolt               FOSS alternative to Discord" ]; then
 #	revolt-desktop --ozone-platform=x11 & disown
