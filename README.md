@@ -1,4 +1,4 @@
-# Atemo Cajaku's scripts
+# Atemo Cayaku's scripts
 Various scripts for my own use, of questionable quality.
 
 ---
